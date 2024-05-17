@@ -5,4 +5,4 @@
 1. Clone the repository:
    ```bash
    git clone https://github.com/ghada337/simple-blog
-   cd blog
+   cd simple-blog
