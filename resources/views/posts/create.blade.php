@@ -1,15 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Create Post</title>
-</head>
-<body>
+@extends('layouts.app')
+
+@section('content')
     <h1>Create New Post</h1>
     <form action="{{ route('posts.store') }}" method="POST">
         @csrf
-        <input type="text" name="title" placeholder="Title">
-        <textarea name="content" placeholder="Content"></textarea>
-        <button type="submit">Create</button>
+        <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" name="title" class="form-control" id="title">
+        </div>
+        <div class="form-group">
+            <label for="content">Content:</label>
+            <textarea name="content" class="form-control" id="content"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
     </form>
-</body>
-</html>
+@endsection
+

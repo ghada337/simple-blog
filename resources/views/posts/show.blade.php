@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>{{ $post->title }}</title>
-</head>
-<body>
+@extends('layouts.app')
+
+@section('content')
     <h1>{{ $post->title }}</h1>
     <p>{{ $post->content }}</p>
-    <a href="{{ route('posts.index') }}">Back to Posts</a>
-</body>
-</html>
+    <a href="{{ route('posts.index') }}" class="btn btn-secondary">Back to Posts</a>
+@endsection
+
