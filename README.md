@@ -25,5 +25,5 @@ This project is a simple blog system built with Laravel. It allows users to crea
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/gww337/simple-blog.git
+   git clone https://github.com/ghada337/simple-blog.git
    cd simple-blog
